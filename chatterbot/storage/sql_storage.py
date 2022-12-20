@@ -369,3 +369,6 @@ class SQLStorageAdapter(StorageAdapter):
             self.logger.exception(statement_text)
         finally:
             session.close()
+            # if not self.engine.dialect.has_table(self.engine, 'Statement'):
+self.create_database()
+                
